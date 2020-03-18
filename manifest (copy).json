@@ -28,7 +28,7 @@
             {
                 "number": "200",
                 "filename": "L200.md",
-                "title": "Lab 200: Review Query Performance",
+                "title": "Lab 200: Machine Learning",
                 "description": "Run sample queries against a 100 million row current data set and a six billion row historic data set",
                 "labels": {"version": "Self-Guided"}
             },
