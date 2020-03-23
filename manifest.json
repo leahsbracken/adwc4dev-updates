@@ -19,7 +19,7 @@
         "filename": "2.md"
       },
       {
-        "title": "Lab 3: ATP and ADW Connection",
+        "title": "Lab 3: Migrate ML Model to ATP",
         "description": "Work with an Apache Zepplin notebook and create a Machine Learning model to predict customer good credit",
         "publisheddate": "1/31/2020",
         "filename": "3.md"
