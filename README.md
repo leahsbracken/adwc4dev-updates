@@ -1,4 +1,4 @@
-# Oracle Autonomous Data Warehouse Cloud Service For Developers
+# Oracle Machine Learning with Autonomous Database
 
 Welcome to this Oracle Machine Learning workshop. Machine learning is a powerful technique for analyzing data, and in this sequence of labs we will show you how to apply it to the most valuable data in your organization - existing enterprise data in Oracle Database. If you are an Oracle data professional but not a data scientist, this workshop will take you through your first machine learning project from data preparation to successful deployment of a model.
 
