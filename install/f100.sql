@@ -28,14 +28,14 @@ prompt APPLICATION 100 - Alpha Office
 -- Application Export:
 --   Application:     100
 --   Name:            Alpha Office
---   Date and Time:   22:45 Tuesday March 24, 2020
+--   Date and Time:   23:57 Tuesday March 24, 2020
 --   Exported By:     ML_USER
 --   Flashback:       0
 --   Export Type:     Application Export
---     Pages:                      8
+--     Pages:                      9
 --       Items:                   95
 --       Processes:                6
---       Regions:                  8
+--       Regions:                  9
 --       Buttons:                  3
 --       Dynamic Actions:          1
 --     Shared Components:
@@ -111,7 +111,7 @@ wwv_flow_api.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'Alpha Office'
 ,p_last_updated_by=>'ML_USER'
-,p_last_upd_yyyymmddhh24miss=>'20200324224421'
+,p_last_upd_yyyymmddhh24miss=>'20200324233720'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>3
 ,p_ui_type_name => null
@@ -164,6 +164,14 @@ wwv_flow_api.create_list_item(
 ,p_list_item_link_target=>'f?p=&APP_ID.:3:&SESSION.::&DEBUG.::::'
 ,p_list_item_icon=>'fa-users'
 ,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(11211484737870663)
+,p_list_item_display_sequence=>70
+,p_list_item_link_text=>'Overall Credit Profile'
+,p_list_item_link_target=>'f?p=&APP_ID.:4:&SESSION.::&DEBUG.'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'4'
 );
 end;
 /
@@ -10132,7 +10140,7 @@ wwv_flow_api.create_page(
 ,p_autocomplete_on_off=>'OFF'
 ,p_page_template_options=>'#DEFAULT#'
 ,p_last_updated_by=>'ML_USER'
-,p_last_upd_yyyymmddhh24miss=>'20200320213946'
+,p_last_upd_yyyymmddhh24miss=>'20200324233020'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(26440688152923343)
@@ -10173,9 +10181,17 @@ wwv_flow_api.create_worksheet_column(
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(11176239869498102)
+,p_db_column_name=>'CREDIT_PREDICTION'
+,p_display_order=>11
+,p_column_identifier=>'P'
+,p_column_label=>'Credit Prediction'
+,p_column_type=>'STRING'
+);
+wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(24297061359393997)
 ,p_db_column_name=>'LIKELY_GOOD_CREDIT_PCNT'
-,p_display_order=>2
+,p_display_order=>21
 ,p_column_identifier=>'O'
 ,p_column_label=>'Likely Good Credit Pcnt'
 ,p_column_type=>'NUMBER'
@@ -10184,7 +10200,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26441527174923350)
 ,p_db_column_name=>'FIRST_NAME'
-,p_display_order=>3
+,p_display_order=>31
 ,p_column_identifier=>'B'
 ,p_column_label=>'First Name'
 ,p_column_type=>'STRING'
@@ -10193,7 +10209,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26441967865923350)
 ,p_db_column_name=>'LAST_NAME'
-,p_display_order=>4
+,p_display_order=>41
 ,p_column_identifier=>'C'
 ,p_column_label=>'Last Name'
 ,p_column_type=>'STRING'
@@ -10202,7 +10218,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26442342118923350)
 ,p_db_column_name=>'WEALTH'
-,p_display_order=>5
+,p_display_order=>51
 ,p_column_identifier=>'D'
 ,p_column_label=>'Wealth'
 ,p_column_type=>'STRING'
@@ -10211,7 +10227,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26442774963923350)
 ,p_db_column_name=>'INCOME'
-,p_display_order=>6
+,p_display_order=>61
 ,p_column_identifier=>'E'
 ,p_column_label=>'Income'
 ,p_column_type=>'NUMBER'
@@ -10221,7 +10237,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26443126801923351)
 ,p_db_column_name=>'CUSTOMER_DMG_SEGMENT'
-,p_display_order=>7
+,p_display_order=>71
 ,p_column_identifier=>'F'
 ,p_column_label=>'Customer Dmg Segment'
 ,p_column_type=>'STRING'
@@ -10230,7 +10246,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26443587796923351)
 ,p_db_column_name=>'CUSTOMER_VALUE_SEGMENT'
-,p_display_order=>8
+,p_display_order=>81
 ,p_column_identifier=>'G'
 ,p_column_label=>'Customer Value Segment'
 ,p_column_type=>'STRING'
@@ -10239,7 +10255,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26443935949923351)
 ,p_db_column_name=>'OCCUPATION'
-,p_display_order=>9
+,p_display_order=>91
 ,p_column_identifier=>'H'
 ,p_column_label=>'Occupation'
 ,p_column_type=>'STRING'
@@ -10248,7 +10264,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26444405839923351)
 ,p_db_column_name=>'HIGHEST_CREDIT_CARD_LIMIT'
-,p_display_order=>10
+,p_display_order=>101
 ,p_column_identifier=>'I'
 ,p_column_label=>'Highest Credit Card Limit'
 ,p_column_type=>'NUMBER'
@@ -10258,7 +10274,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26444787542923352)
 ,p_db_column_name=>'DELINQUENCY_STATUS'
-,p_display_order=>11
+,p_display_order=>111
 ,p_column_identifier=>'J'
 ,p_column_label=>'Delinquency Status'
 ,p_column_type=>'STRING'
@@ -10267,7 +10283,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26445033822923352)
 ,p_db_column_name=>'MAX_CC_SPENT_AMOUNT'
-,p_display_order=>12
+,p_display_order=>121
 ,p_column_identifier=>'K'
 ,p_column_label=>'Max Cc Spent Amount'
 ,p_column_type=>'NUMBER'
@@ -10277,7 +10293,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26445466651923352)
 ,p_db_column_name=>'MAX_CC_SPENT_AMOUNT_PREV'
-,p_display_order=>13
+,p_display_order=>131
 ,p_column_identifier=>'L'
 ,p_column_label=>'Max Cc Spent Amount Prev'
 ,p_column_type=>'NUMBER'
@@ -10287,7 +10303,7 @@ wwv_flow_api.create_worksheet_column(
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(26445853584923352)
 ,p_db_column_name=>'RESIDENTAL_STATUS'
-,p_display_order=>14
+,p_display_order=>141
 ,p_column_identifier=>'M'
 ,p_column_label=>'Residental Status'
 ,p_column_type=>'STRING'
@@ -10300,7 +10316,8 @@ wwv_flow_api.create_worksheet_rpt(
 ,p_report_alias=>'152923'
 ,p_status=>'PUBLIC'
 ,p_is_default=>'Y'
-,p_report_columns=>'CUSTOMER_ID:FIRST_NAME:LAST_NAME:WEALTH:INCOME:CUSTOMER_DMG_SEGMENT:CUSTOMER_VALUE_SEGMENT:OCCUPATION:HIGHEST_CREDIT_CARD_LIMIT:DELINQUENCY_STATUS:MAX_CC_SPENT_AMOUNT:MAX_CC_SPENT_AMOUNT_PREV:RESIDENTAL_STATUS:LIKELY_GOOD_CREDIT_PCNT'
+,p_report_columns=>'CUSTOMER_ID:FIRST_NAME:LAST_NAME:WEALTH:INCOME:CUSTOMER_DMG_SEGMENT:CUSTOMER_VALUE_SEGMENT:OCCUPATION:HIGHEST_CREDIT_CARD_LIMIT:DELINQUENCY_STATUS:MAX_CC_SPENT_AMOUNT:MAX_CC_SPENT_AMOUNT_PREV:RESIDENTAL_STATUS:LIKELY_GOOD_CREDIT_PCNT:CREDIT_PREDICTIO'
+||'N'
 );
 end;
 /
@@ -11191,6 +11208,139 @@ wwv_flow_api.create_page_button(
 ,p_button_image_alt=>'Create'
 ,p_button_position=>'RIGHT_OF_IR_SEARCH_BAR'
 ,p_button_redirect_url=>'f?p=&APP_ID.:4:&SESSION.::&DEBUG.:4'
+);
+end;
+/
+prompt --application/pages/page_00004
+begin
+wwv_flow_api.create_page(
+ p_id=>4
+,p_user_interface_id=>wwv_flow_api.id(24121269367651050)
+,p_name=>'Overall Credit Profile'
+,p_step_title=>'Overall Credit Profile'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_last_updated_by=>'ML_USER'
+,p_last_upd_yyyymmddhh24miss=>'20200324233720'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(37669435823056865)
+,p_plug_name=>'Overall Alpha Office Customer Credit'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(24042709410650900)
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'BODY'
+,p_plug_source_type=>'NATIVE_JET_CHART'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_plug_footer=>'Customer count by percent likely to have good credit'
+);
+wwv_flow_api.create_jet_chart(
+ p_id=>wwv_flow_api.id(11212193421870670)
+,p_region_id=>wwv_flow_api.id(37669435823056865)
+,p_chart_type=>'bar'
+,p_height=>'400'
+,p_animation_on_display=>'auto'
+,p_animation_on_data_change=>'auto'
+,p_orientation=>'vertical'
+,p_hide_and_show_behavior=>'withRescale'
+,p_hover_behavior=>'dim'
+,p_stack=>'off'
+,p_stack_label=>'off'
+,p_connect_nulls=>'Y'
+,p_value_position=>'auto'
+,p_sorting=>'label-asc'
+,p_fill_multi_series_gaps=>true
+,p_tooltip_rendered=>'Y'
+,p_show_series_name=>true
+,p_show_group_name=>true
+,p_show_value=>true
+,p_show_label=>true
+,p_show_row=>true
+,p_show_start=>true
+,p_show_end=>true
+,p_show_progress=>true
+,p_show_baseline=>true
+,p_legend_rendered=>'off'
+,p_legend_position=>'auto'
+,p_overview_rendered=>'off'
+,p_horizontal_grid=>'auto'
+,p_vertical_grid=>'auto'
+,p_gauge_orientation=>'circular'
+,p_gauge_indicator_size=>1
+,p_gauge_plot_area=>'on'
+,p_show_gauge_value=>true
+);
+wwv_flow_api.create_jet_chart_series(
+ p_id=>wwv_flow_api.id(11214488922870673)
+,p_chart_id=>wwv_flow_api.id(11212193421870670)
+,p_seq=>10
+,p_name=>'Series 1'
+,p_data_source_type=>'SQL'
+,p_data_source=>'select likely_good_credit_pcnt, count(*) total from credit_scoring_100k group by likely_good_credit_pcnt order by count(*) '
+,p_items_value_column_name=>'TOTAL'
+,p_items_label_column_name=>'LIKELY_GOOD_CREDIT_PCNT'
+,p_assigned_to_y2=>'off'
+,p_items_label_rendered=>true
+,p_items_label_position=>'auto'
+);
+wwv_flow_api.create_jet_chart_axis(
+ p_id=>wwv_flow_api.id(11212610627870671)
+,p_chart_id=>wwv_flow_api.id(11212193421870670)
+,p_axis=>'x'
+,p_is_rendered=>'on'
+,p_baseline_scaling=>'zero'
+,p_major_tick_rendered=>'auto'
+,p_minor_tick_rendered=>'auto'
+,p_tick_label_rendered=>'on'
+,p_zoom_order_seconds=>false
+,p_zoom_order_minutes=>false
+,p_zoom_order_hours=>false
+,p_zoom_order_days=>true
+,p_zoom_order_weeks=>true
+,p_zoom_order_months=>true
+,p_zoom_order_quarters=>true
+,p_zoom_order_years=>false
+);
+wwv_flow_api.create_jet_chart_axis(
+ p_id=>wwv_flow_api.id(11213271296870671)
+,p_chart_id=>wwv_flow_api.id(11212193421870670)
+,p_axis=>'y'
+,p_is_rendered=>'on'
+,p_baseline_scaling=>'zero'
+,p_position=>'auto'
+,p_major_tick_rendered=>'auto'
+,p_minor_tick_rendered=>'auto'
+,p_tick_label_rendered=>'on'
+,p_zoom_order_seconds=>false
+,p_zoom_order_minutes=>false
+,p_zoom_order_hours=>false
+,p_zoom_order_days=>true
+,p_zoom_order_weeks=>true
+,p_zoom_order_months=>true
+,p_zoom_order_quarters=>false
+,p_zoom_order_years=>false
+);
+wwv_flow_api.create_jet_chart_axis(
+ p_id=>wwv_flow_api.id(11213824524870672)
+,p_chart_id=>wwv_flow_api.id(11212193421870670)
+,p_axis=>'y2'
+,p_is_rendered=>'off'
+,p_format_scaling=>'auto'
+,p_scaling=>'linear'
+,p_baseline_scaling=>'zero'
+,p_position=>'auto'
+,p_major_tick_rendered=>'on'
+,p_minor_tick_rendered=>'off'
+,p_tick_label_rendered=>'on'
+,p_split_dual_y=>'auto'
+,p_zoom_order_seconds=>false
+,p_zoom_order_minutes=>false
+,p_zoom_order_hours=>false
+,p_zoom_order_days=>false
+,p_zoom_order_weeks=>false
+,p_zoom_order_months=>false
+,p_zoom_order_quarters=>false
+,p_zoom_order_years=>false
 );
 end;
 /
