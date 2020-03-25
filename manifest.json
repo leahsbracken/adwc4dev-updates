@@ -1,7 +1,7 @@
 {
   "tutorials": [
       {
-        "title": "Autonomous Data Warehouse for Developers",
+        "title": "Oracle Machine Learning with Autonomous Database",
         "description": "Introduction",
         "publisheddate": "3/24/2020",
         "filename": "README.md"
