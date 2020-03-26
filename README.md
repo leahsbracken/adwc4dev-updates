@@ -8,11 +8,7 @@ This is a fictitious example, but it reflects a real world need. You keep your m
 
 We will lead you through all the steps to create an Oracle Cloud trial account, provision the services you need, and do the needed machine learning work. If you have an existing personal or company cloud account you are welcome to use that. Otherwise, the first step (if you haven’t already done so) is to create a free Oracle Cloud trial account, following the link below. You can complete this lab using just the free tier, though feel free to experiment with other services, since the free tier comes with a $300 credit valid for 30 days. As soon as you have an account you are ready to start lab 1. (Note that although the sign-up process will ask for a credit card, we will not charge that card unless you decide to upgrade to a paid subscription. So it’s safe to sign up - you won’t get an unexpected bill like with some other cloud vendors).
 
-<video src="odi.mp4" width="320" height="200" controls preload></video>
-
 ### **Step 1:** Acquire an Oracle Cloud trial account
-
-[test.pdf](test.pdf)
 
 1. If you already have an Oracle Cloud trial account, you may skip to the next part.
 
