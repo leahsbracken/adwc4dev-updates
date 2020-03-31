@@ -1,8 +1,10 @@
 # Oracle Machine Learning with Autonomous Database
 
-Welcome to this Oracle Machine Learning workshop. Machine learning is a powerful technique for analyzing data, and in this sequence of labs we will show you how to apply it to the most valuable data in your organization - existing enterprise data in Oracle Database. If you are an Oracle data professional but not a data scientist, this workshop will take you through your first machine learning project from data preparation to successful deployment of a model.
+Welcome to this Oracle Machine Learning workshop. Machine learning is a powerful technique for analyzing data, and in this sequence of labs we will show you how to apply it to the most valuable data in your organization - existing enterprise data in Oracle Database. If you are an Oracle data professional but not a data scientist, this workshop will take you through your first machine learning project from data preparation to successful deployment of a model integrated into an APEX application.
 
-To illustrate this lab, you are going to work with Alpha Office, a fictitious company in the financial services space. They have a new service they have been trialing, and they are ready to take it to a wider audience. But not everybody is suitable, so for each applicant they need to determine if they have suitable credit. You are going to use machine learning, and customer data from their data warehouse, to build, train and deploy a model that will do just that for them.
+To illustrate this lab, you are going to work with Alpha Office, a fictitious company who sells high cost products on installment plans. They have noticed that revenues and margins are down somewhat, and that appears to be because too many customers purchase a product, but then are not able to keep up the payments. They return the product which then has to be sold as used or refurbished. 
+
+Alpha Office can purchase credit score information, but they need more than that. They need to be able to include data that predicts the likelihood of a customer being unable to continue payments and “involuntarily churning”. They need to do a better job on approvals to cut down this problem. So for each applicant they need to determine if they have a suitable credit and payment profile. You are going to use machine learning, and customer data from their data warehouse, to build, train and deploy a model that will do just that for them.
 
 This is a fictitious example, but it reflects a real world need. You keep your most valuable data in Oracle Database. But do you get the most value out of that data? Are there business problems that you could help your company to solve with machine learning? After you have completed this lab, you will have some of the core expertise to start applying machine learning to your company’s data and business problems. We wish you lots of success!
 
@@ -10,7 +12,7 @@ We will lead you through all the steps to create an Oracle Cloud trial account, 
 
 ### **Step 1:** Acquire an Oracle Cloud trial account
 
-1. If you already have an Oracle Cloud trial account, you may skip to the next part.
+1. 1. If you already have an Oracle Cloud trial account, or you are able to use an existing corporate cloud account, you may skip to the next part.
 
 2. Please <a href="https://myservices.us.oraclecloud.com/mycloud/signup?language=en&sourceType=:ow:lp:cpo::RC_NAMK190523P00161:APEX_ATP_HOL&intcmp=:ow:lp:cpo::RC_NAMK190523P00161:APEX_ATP_HOL" target="_trial_">click this link to create your free account</a>. When you complete the registration process you'll receive an account with a $300 credit that will enable you to complete the lab for free. You can then use any remaining credit to continue to explore the Oracle Cloud.
 
